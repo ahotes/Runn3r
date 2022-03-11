@@ -1,3 +1,3 @@
 # Runn3r
 
-Runn3r is a web-app designed to allow for the management of personal health and fitness. The app features an exercise planner, food planner (with calorie calculator), and a planning calendar.
+Runn3r is a web-app designed to for the management of users' personal health and fitness. The app features an exercise planner, food planner (with calorie calculator), and a planning calendar.
