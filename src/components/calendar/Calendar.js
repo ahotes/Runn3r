@@ -23,17 +23,6 @@ function Calendar() {
   return (
     <div className="Calendar">
       <div className="calendarContainer">
-        <FullCalendar
-          plugins={[dayGridPlugin, interactionPlugin]}
-          initialView="dayGridMonth"
-          selectable={true}
-          customButtons={customButtons}
-          headerToolbar={{
-            left: "custom1",
-            center: "title",
-            right: "today prev,next",
-          }}
-        />
       </div>
     </div>
   );

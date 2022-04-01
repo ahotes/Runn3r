@@ -3,7 +3,7 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import { Form, Button } from 'react-bootstrap';
-import './ExercisePlanner.css';
+import './Exercise.css';
 
 function ExercisePlanner() {
     // calories burned formula: time * (3.5 * MET) (weight(kilograms)) / 200
@@ -35,6 +35,7 @@ function ExercisePlanner() {
                 />
                 </div>
             </Form>
+            
         </div>
     )
 }

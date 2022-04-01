@@ -1,19 +1,39 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 // component imports
-import Nav from "./components/Nav";
-import Calendar from "./components/Calendar";
-import ExercisePlanner from "./components/Planner components/ExercisePlanner";
-import FoodPlanner from "./components/Planner components/FoodPlanner";
-import Landing from "./components/Landing";
+import Nav from "./components/navigation/Navbar";
+import Settings from "./components/pages/Settings";
+import Profile from "./components/pages/Profile";
+import Exercise from "./components/pages/Exercise";
+import Food from "./components/pages/Food";
+import Planner from "./components/pages/Planner";
+import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+  const [toggleNav, setToggleNav] = useState(false);
+
+  const ToggleNav = () =>{
+    setToggleNav = toggleNav = false ? true : false;
+  }
+
   return (
     <>
-        <Nav />
-        <Landing/>
+      <Router>
+        <div className="App">
+          <Nav className="nav" />
+          <div className="page-area">
+            <Routes>
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/exercise" element={<Exercise />} />
+              <Route path="/food" element={<Food />} />
+              <Route path="/planner" element={<Planner />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </div>
+        </div>
+      </Router>
     </>
   );
 }
