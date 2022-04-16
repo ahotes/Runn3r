@@ -1,7 +1,15 @@
-#calendar .fc-day-today{
+:root{
+    --primary: #fff;
+}
+
+#calendarWrapper .fc-day-today{
     background-color: #fff !important;
 }
 
-#calendar{
-    width: 70%;
+.exerciseCalendar{
+    max-width: 1500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
 }

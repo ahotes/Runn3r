@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+.lightGray{
+    background-color: lightgray;
+    min-height: 100vh;
+}
+.optionList{
+    display: flex;
+    position: relative;
+    top: 100px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.optionList h1{
+    font-size: 3.5rem;
+    margin-bottom: 1em;
+}

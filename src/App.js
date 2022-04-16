@@ -1,28 +1,21 @@
-import React, {useState} from "react";
+import React from "react";
 import "./App.css";
 
 // component imports
-import Nav from "./components/navigation/Navbar";
+import Navbar from "./components/navigation/Navbar";
 import Settings from "./components/pages/Settings";
 import Profile from "./components/pages/Profile";
 import Exercise from "./components/pages/Exercise";
 import Food from "./components/pages/Food";
 import Planner from "./components/pages/Planner";
-import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [toggleNav, setToggleNav] = useState(false);
-
-  const ToggleNav = () =>{
-    setToggleNav = toggleNav = false ? true : false;
-  }
-
   return (
     <>
       <Router>
         <div className="App">
-          <Nav className="nav" />
+          <Navbar className="nav" />
           <div className="page-area">
             <Routes>
               <Route path="/profile" element={<Profile />} />

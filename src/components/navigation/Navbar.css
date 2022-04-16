@@ -4,11 +4,7 @@
     padding: 0px;
 }
 
-body{
-    background-color: rgb(235, 235, 235);
-}
-
-.navbar{
+.navBar{
     display: flex;
     flex: 0 1 auto;
     flex-flow: column nowrap;
@@ -19,6 +15,8 @@ body{
     left: 0px;
     width: 85px;
     height: 100%;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
     overflow: hidden auto;
     background: #202225;
@@ -26,29 +24,22 @@ body{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-ul{
-    padding: 0px;
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-}
-
-ul li:first-of-type .navbar-icons{
+li:first-of-type .navBarIcons{
     width: 2.8em;
     height: 2.8em;
 }
 
-ul li:first-of-type{
+li:first-of-type{
     margin-bottom: 8px;
 }
 
-ul li.navbar-item:last-of-type{
+.navBarItem:last-of-type{
     margin-top: auto;
     margin-bottom: 0px;
     padding: 0px;
 }
 
-.navbar-item {
+.navBarItem {
     display: block;
     border-radius: 2rem;
     margin-top: 1rem;
@@ -56,27 +47,27 @@ ul li.navbar-item:last-of-type{
     margin-left: auto;
     margin-right: auto;
     width: 75%;
+    transition: all 200ms linear 0s; 
 }
 
-.navbar-item:hover{
-    transition: all 0.8s;
-    background-color: royalblue;
+.navBarItem:hover{
+    background-color: royalblue; 
     border-radius: 1.5rem;
 }
 
-.navbar-link{
+.navBarLink{
     display: block;
     border-radius: 1.5rem;
     padding: 0.6rem 0px;
 }
 
-.navbar-icons{
+.navBarIcons{
     color: rgb(250, 250, 250);
     width: 2.5em;
     height: 2.5em;
 }
 
-.divider{
+.navDivider{
     display: block;
     border-radius: 3px;
     margin-left: auto;
