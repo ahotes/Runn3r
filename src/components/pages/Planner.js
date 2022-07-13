@@ -4,7 +4,7 @@ import './Planner.css'
 function Planner() {
   return (
     <>
-    <div>Calendar planner</div>
+      <div>Calendar planner</div>
     </>
     
   )

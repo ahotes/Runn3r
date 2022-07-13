@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
-.lightGray{
-    background-color: lightgray;
-    min-height: 100vh;
+.bgcolor{
+    background-color: rgb(242, 242, 242);
+    height: 100vh;
 }
+
 .optionList{
     display: flex;
     position: relative;
-    top: 100px;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
-    min-width: 200px;
+    max-width: 900px;
+    min-width: 150px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Lato', sans-serif;
@@ -21,4 +21,39 @@
 .optionList h1{
     font-size: 3.5rem;
     margin-bottom: 1em;
+}
+
+.formHeader{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.radio-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+}
+
+img{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+input[type=radio]:checked + label > img{
+    outline: 2px solid rgb(66, 66, 66);
+    opacity: 0.8;
+}
+
+.label-content{
+    display: inline-flex;
 }

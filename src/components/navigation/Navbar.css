@@ -1,3 +1,4 @@
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0px;
@@ -75,4 +76,14 @@ li:first-of-type{
     width: 40px;
     height: 4px;
     background-color: gray;
+}
+
+.tooltipHeader{
+
+}
+
+.tooltipContent{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 0px;
 }

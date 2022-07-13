@@ -1,0 +1,72 @@
+{
+    "data": {
+        "standard": {
+            "id": "theme_1",
+            "name": "Standard",
+            "styles": {
+                "body": "#f2f2f2",
+                "text": "",
+                "button": {
+                    "text": "",
+                    "background": ""
+                },
+                "link": {
+                    "text": "",
+                    "opacity": ""
+                },
+                "font": ""
+            }
+        },
+        "dark": {
+            "id": "theme_2",
+            "name": "Dark",
+            "styles": {
+                "body": "",
+                "text": "",
+                "button": {
+                    "text": "",
+                    "background": ""
+                },
+                "link": {
+                    "text": "",
+                    "opacity": ""
+                },
+                "font": ""
+            }
+        },
+        "highContrast": {
+            "id": "theme_3",
+            "name": "HighContrast",
+            "styles": {
+                "body": "",
+                "text": "",
+                "button": {
+                    "text": "",
+                    "background": ""
+                },
+                "link": {
+                    "text": "",
+                    "opacity": ""
+                },
+                "font": ""
+            }
+        },
+        "colorBlind": {
+            "id": "theme_4",
+            "name": "ColorBlind",
+            "styles": {
+                "body": "",
+                "text": "",
+                "button": {
+                    "text": "",
+                    "background": ""
+                },
+                "link": {
+                    "text": "",
+                    "opacity": ""
+                },
+                "font": ""
+            }
+        }
+    }
+}

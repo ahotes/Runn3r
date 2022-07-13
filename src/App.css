@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
 *, *::before, *::after{
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
-.App {
+.App-layout{
   display: grid;
   grid-template-areas:
-  "nav content content"
-  "nav content content"
-  "nav content content";
-  grid-template-columns: 85px 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
+  "nav content content content"
+  "nav content content content"
+  "nav content content content";
+  grid-template-columns: 85px 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
 }
 
 .nav{
@@ -24,12 +26,13 @@
 }
 
 @media screen and (max-width: 300px) {
-  .App{
+  .App-layout{
     grid-template-areas: 
-    "nav nav nav"
-    "content content content"
-    "content content content";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 85px 1fr 1fr;
+    "nav"
+    "content"
+    "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 85px;
   }
 }
+

@@ -1,15 +1,55 @@
-:root{
-    --primary: #fff;
-}
 
-#calendarWrapper .fc-day-today{
+.fc-day-today{
     background-color: #fff !important;
 }
 
-.exerciseCalendar{
-    max-width: 1500px;
+.exercise-view{
+    margin: 0rem;
+    padding: 0rem;
+    border-radius: 12px;
+}
+
+.secondTab{
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: rgb(74, 143, 255, 0.9);
+}
+
+.customH2{
+    font-family: "segoe ui";
+}
+
+.form-search{
+    height: 40px;
+    padding: 0.5rem;
+    width: 100%;
     background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 1rem;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+.form-search:focus{
+    transition: all ease-in 600ms;
+    outline: 1px solid rgba(46, 46, 46, 0.5);
+}
+
+.white{
+color: white;
+}
+
+.tab-selector{
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;   
+    padding: 0.6rem;
+    width: 100%;
+}
+
+.customSelect{
+    width: 100px !important;
+    display: inline;
 }
